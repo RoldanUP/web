@@ -1,0 +1,100 @@
+.texto1
+{
+font-family: 'Poiret One';
+font-size: 60px ;
+text-shadow: 4px 4px 4px #aaa;
+}
+.texto2
+{
+font-family: 'Poiret One';
+font-size: 30px ;
+text-shadow: 4px 4px 4px #aaa;
+}
+
+.centrar
+{
+    
+    padding-top: 10px;
+    padding-left: 100px;
+}
+
+
+.adaptar
+{
+        width: 100%;
+
+}
+
+
+.color10
+{
+    background-color: #ffa720;
+}
+.color2
+{
+    background-color: #e84f0c;
+}
+.color3
+{
+    background-color: #ff0000;
+}
+.color4
+{
+    background-color: #e20ce8;
+}
+.color5
+{
+    background-color: #6e0dff;  
+}
+.color6
+{
+    background-color: #ffbacd;
+}
+.color7
+{
+    background-color: #e8c17a;
+}
+.color8
+{
+    background-color: #A3FF62;
+}
+.color9
+{
+    background-color: #59d6e8;
+}
+.color10
+{
+    background-color: #c68aff;
+}
+.color11
+{
+    background-color: #ff609b;
+}
+.color12
+{
+    background-color: #e8a128;  
+}
+.color13
+{
+    background-color: #7dff08;
+}
+.color14
+{
+    background-color: #08d7e8;
+}
+.color15
+{
+    background-color: #9031ff;
+}
+.color16
+{
+    background-color: #d5e8e4;
+}
+.color17
+{
+    background-color: #e8a25b;
+}
+.color18
+{
+    background-color: #e884da;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spero</title>
+	
+	
+
+<!-- fuente google     -->
+
+	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+	<!-- Poder ocupar botones facebook     -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script> 
+	<!-- ACA TERMINA FACEBOOK-->
+
+	<!-- Poder ocupar bootstrap     -->
+	<!-- Latest compiled and minified CSS -->
+	
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">
+	
+	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	<%= csrf_meta_tags %>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+	<!-- Barra de navegación -->
+	<%= render :partial => 'shared/header' %>
+	
+
+
+<%= yield %>
+<!-- cuadro CON BOTON -->
+<!-- <div class="row" style="margin-bottom: 0px;margin-left: 500px;">
+
+	<div class="col-sm-6 col-md-4" >
+		<div class="thumbnail">
+			<div class="caption">
+				<div class="container" style="margin-left:45px">
+					<h3>Innovación</h3>
+				</div>
+				<a href='http://www.spero.cl'><img src="assets/spero.png" width="200" height="100" title="Descubre la revolución" border="0" style="margin-left: 20px ;margin-bottom: 10px"></a>
+
+				<p><a href="http://www.spero.cl" class="btn btn-primary" 
+					role="button" style="margin-left:75px" target="_blank">	
+
+					Visitanos        	      
+				</a> 
+			</p>
+		</div>
+	</div>
+ACA TERMINA CUADRO CON BOTON-->
+</div>
+
+
+<!-- Pie de página -->
+<div class="panel panel-default" style="margin-bottom:0px">
+	<div class="panel-footer">RoldanUP        <br>     
+
+		<div class="fb-follow" data-href="https://www.facebook.com/SperoChile" data-colorscheme="light" data-layout="standard" data-show-faces="false"></div>
+
+	</div>
+</div>
+</body>
+</html>
