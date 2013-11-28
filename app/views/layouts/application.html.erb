@@ -5,9 +5,10 @@
 	
 	
 
-<!-- fuente google     -->
+	<!-- fuente google -->
 
 	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+	
 	<!-- Poder ocupar botones facebook     -->
 	<div id="fb-root"></div>
 	<script>(function(d, s, id) {
@@ -35,47 +36,21 @@
 
 
 </head>
-<body>
+		<body>
 
-	<!-- Barra de navegación -->
-	<%= render :partial => 'shared/header' %>
-	<!-- Este es el codigo de mensajes error -->
-	<p class="notice"><%= notice %></p>
-	<p class="alert"><%= alert %></p>
-	
-
-
-<%= yield %>
-<!-- cuadro CON BOTON -->
-<!-- <div class="row" style="margin-bottom: 0px;margin-left: 500px;">
-
-	<div class="col-sm-6 col-md-4" >
-		<div class="thumbnail">
-			<div class="caption">
-				<div class="container" style="margin-left:45px">
-					<h3>Innovación</h3>
-				</div>
-				<a href='http://www.spero.cl'><img src="assets/spero.png" width="200" height="100" title="Descubre la revolución" border="0" style="margin-left: 20px ;margin-bottom: 10px"></a>
-
-				<p><a href="http://www.spero.cl" class="btn btn-primary" 
-					role="button" style="margin-left:75px" target="_blank">	
-
-					Visitanos        	      
-				</a> 
-			</p>
-		</div>
-	</div>
-ACA TERMINA CUADRO CON BOTON-->
-</div>
+			<!-- Barra de navegación -->
+			
+			<%= render :partial => 'shared/header' %>
+			
+			<!-- Este es el codigo de mensajes error -->
+			<p class="notice"><%= notice %></p>
+			<p class="alert"><%= alert %></p>
+			
 
 
-<!-- Pie de página -->
-<div class="panel panel-default" style="margin-bottom:0px">
-	<div class="panel-footer">RoldanUP        <br>     
+			<%= yield %>
 
-		<div class="fb-follow" data-href="https://www.facebook.com/SperoChile" data-colorscheme="light" data-layout="standard" data-show-faces="false"></div>
-
-	</div>
-</div>
-</body>
+			<!-- Pie de página -->
+			<%= render :partial => 'shared/footer'%>
+		</body>
 </html>

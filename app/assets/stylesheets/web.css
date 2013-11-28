@@ -4,6 +4,8 @@ font-family: 'Poiret One';
 font-size: 60px ;
 text-shadow: 4px 4px 4px #aaa;
 }
+
+
 .texto2
 {
 font-family: 'Poiret One';
@@ -25,7 +27,25 @@ text-shadow: 4px 4px 4px #aaa;
 
 }
 
+.color21
+{
+    background-color: #0B3861;
+}
 
+.color22
+{
+    background-color: #68217A;
+}
+
+.color23
+{
+    color: white;
+}
+
+.color24
+{
+    background-color: black;
+}
 .color10
 {
     background-color: #ffa720;
