@@ -1,78 +1,79 @@
 <div class="container">
 
-<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 ">
-							<h1 class="texto1" style= "margin-bottom=0px ; margin-top: 0px">Spero</h1>
-							<h5 class="texto2"  style= "margin-bottom=0px ; margin-top: 0px" >Valoramos tu tiempo</h5>
-				</div>
-				<div class=" hidden-xs col-sm-6 col-md-4 col-lg-4 centrar" >
-							
-							<a href="https://www.facebook.com/SperoChile" target="_blank" > <img src="assets/4.png" alt="Spero" 			 style="width:65px"></a>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 ">
+				<h1 class="texto1" style= "margin-bottom=0px ; margin-top: 0px">Spero</h1>
+				<h5 class="texto2"  style= "margin-bottom=0px ; margin-top: 0px" >Valoramos tu tiempo</h5>
+			</div>
+			<div class=" hidden-xs col-sm-6 col-md-4 col-lg-4 centrar" >
 
-							<a href="https://twitter.com/RoldanUP" target="_blank"> <img src="assets/1t.png" alt="" style="width:65px"></a>	
+				<a href="https://www.facebook.com/SperoChile" target="_blank" > <img src="assets/4.png" alt="Spero" 			 style="width:65px"></a>
 
-							<a href="www.spero.cl"  target="_blank"> <img src="assets/1señal.png" alt="" style="width:65px"></a>		
-				</div>
+				<a href="https://twitter.com/RoldanUP" target="_blank"> <img src="assets/1t.png" alt="" style="width:65px"></a>	
 
+				<a href="www.spero.cl"  target="_blank"> <img src="assets/1señal.png" alt="" style="width:65px"></a>		
 			</div>
 
 		</div>
 
-
-	<nav class="navbar navbar-default">
-							<div "navbar-header">
-							<div> 
-			           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-																		<span class="sr-only">Cambiar Navegacion</span>
-																		<span class="icon-bar"></span>
-																		<span class="icon-bar"></span>
-																		<span class="icon-bar"></span>
-			                </button> 
-			                <a href="" class="navbar-brand">Spero </a>
-			       					</div>
-
-			                <div class="collapse navbar-collapse navbar-ex1-collapse">
-			                	    <ul class="nav navbar-nav"> 
-			                	    	
-			                	    	<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Qué es Spero?<b class="caret"> </b></a>
-																<ul class="dropdown-menu"> 
-			                	    				<li><a href="#">Innovacion</a></li>
-			                	    				<li><a href="#">Esfuerzo</a></li>
-			                	    				<li><a href="#">Sorprendente</a></li>
-			                	    				
-					                 		 </ul>
-					                 		 	</li>
-			                	    	
-
-			                	    	<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Contacto<b class="caret"> </b></a>
-																<ul class="dropdown-menu"> 
-			                	    				<li><a href="#">Waze</a></li>
-			                	    				<li><a href="#">Google maps</a></li>
-			                	    				<li><a href="#">Email</a></li>
-			                	    				
-					                 		 </ul>
-					                 		 	</li>
-			                	    	
-			                	    	<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Servicio<b class="caret"> </b></a>
-																<ul class="dropdown-menu"> 
-			                	    				<li><a href="#">Contador Online</a></li>
-			                	    				<li><a href="#">Controla tus datos</a></li>
-			                	    				<li><a href="#">Optimización</a></li>
-			                	    				
-					                		 </ul>
-					                 		 
-
-					                		 <% if current_user.nil? %>
-					                 				 <li> <%= link_to("Ingresar", new_user_session_path) %>    </li>
-					                 		 <% else %>
-					                 		 		<li> <%= link_to("Salir", destroy_user_session_path, :method => :delete ) %>    </li>
-					                 		 <% end %>
+	</div>
 
 
-					                 		 	</li>
-					                  </ul>
-					            </div>
-</nav>
+	<nav class="navbar navbar-default" style="margin-bottom:0px">
+		<div "navbar-header">
+			<div> 
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Cambiar Navegacion</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button> 
+				<a href="http://localhost:3000/" class="navbar-brand">Spero </a>
+			</div>
+
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav"> 
+
+					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Qué es Spero?<b class="caret"> </b></a>
+						<ul class="dropdown-menu"> 
+							<li><a href="#">Innovacion</a></li>
+							<li><a href="#">Esfuerzo</a></li>
+							<li><a href="#">Sorprendente</a></li>
+
+						</ul>
+					</li>
+
+
+					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Contacto<b class="caret"> </b></a>
+						<ul class="dropdown-menu"> 
+							<li><a href="#">Waze</a></li>
+							<li><a href="#">Google maps</a></li>
+							<li><a href="#">Email</a></li>
+
+						</ul>
+					</li>
+
+					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Servicio<b class="caret"> </b></a>
+						<ul class="dropdown-menu"> 
+							<li><a href="#">Contador Online</a></li>
+							<li><a href="#">Controla tus datos</a></li>
+							<li><a href="#">Optimización</a></li>
+
+						</ul>
+
+						<li> <%= link_to("Pins", pins_path) %>    </li>
+
+						<% if current_user.nil? %>
+						<li> <%= link_to("Ingresar", new_user_session_path) %>    </li>
+						<% else %>
+						<li> <%= link_to("Salir", destroy_user_session_path, :method => :delete ) %>    </li>
+						<% end %>
+
+
+					</li>
+				</ul>
+			</div>
+		</nav>
 
 
