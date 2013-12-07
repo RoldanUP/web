@@ -1,0 +1,28 @@
+
+<div class="container">
+  <div class="row">
+    <h1>Listing pins</h1>
+
+
+
+
+    <% @pins.each do |pin| %>
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+      <div class="img-thumbnail">
+      <%= pin.description %>
+      <%= image_tag(pin.photo, :size => "300x200", :class => 'img-responsive') %>
+      <br>
+      <%= link_to 'Show', pin %>
+      <%= link_to 'Edit', edit_pin_path(pin) %>
+      <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div>
+    </div>
+    <% end %>
+  </div>
+  <br>
+
+  <%= link_to 'New Pin', new_pin_path %>
+
+
+</div>
+
