@@ -1,8 +1,11 @@
 Web::Application.routes.draw do
   
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  
   resources :pins
 
   devise_for :users
+  ActiveAdmin.routes(self)
   resources :users, :only => ['show' , 'index']
   
   get "pages/index"

@@ -10,6 +10,7 @@ end
 
 gem 'rails_12factor'
 
+gem 'activeadmin', github: 'gregbell/active_admin'
 
 group :development, :test do
 	gem 'sqlite3'
